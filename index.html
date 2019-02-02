@@ -1,41 +1,18 @@
-<!DOCTYPE HTML>
-
-<html>
-	<head>
-		<script src="//load.sumome.com/" data-sumo-site-id="86526a3d3620ddfd996e7499932b73ab493b8703887d6d600ecfcca3555cdc8e" async="async"></script>
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:960620,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-		<!--<script src="//my.hellobar.com/957ee9b792e44e3901583cb02e61dce7d132c33f.js" type="text/javascript" charset="utf-8" async="async"></script>
--->
-
-		<title>Nirnay Patel</title>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<meta charset="utf-8" />
-		<meta name="description" content="Nirnay Patel | Entrepreneur. Growth Hacker. Software Developer. Visionary. Leader. Strategist. ">
-		<meta name="keywords" content="Nirnay Patel, Entrepreneur, Growth Hacker, student, columbia, sc, gamecocks, south carolina, borsad, gujarat, entrepreneurship club, stuwork, stuwrk, Software Developer, Leader, Strategist">
-		<meta name="author" content="Nirnay Patel">
-		<!--<meta name="viewport" content="width=device-width, initial-scale=1" />
-		[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		
+<html> 
+<head> 
+<title>Nirnay Patel</title> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="description" content="Nirnay Patel | Entrepreneur. Growth Hacker. Software Developer. Visionary. ">
+<meta name="keywords" content="Nirnay Patel, Entrepreneur, Growth Hacker, columbia, sc, gamecocks, south carolina, entrepreneurship club, Software Developer">
+<meta name="author" content="Nirnay Patel">
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-71932881-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-71932881-1');
 </script>
 
@@ -45,58 +22,184 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-82622629-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-		
-	</head>
+<style type="text/css"> 
+
+@media screen and (max-width: 800px) {
+	#console {
+		width:90%;
+	}
+}
+
+@media screen and (min-width: 800px) and (max-width: 2800px) {
+	#console {
+		width:70%;
+	}
+}
+
+	#console {
+		font-family: Hack, monospace;
+		color: #fff;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:10%;
+		font-size:16px;
+	}
+
+	body {
+		background-color: #000
+	}
+
+	a {
+		color: #0bc;
+		text-decoration: none;
+	}
+	#a {
+		color: #0f0;
+	}
+	#c {
+		color: #0bc;
+	}
+	#b {
+		color: #ff0096;
+	}
+</style> 
+</head> 
+<body> 
+<script type="text/javascript"> 
+	var Typer={
+	text: null,
+	accessCountimer:null,
+	index:0, 
+	speed:4, 
+	file:"", 
+	accessCount:0, 
+	deniedCount:0, 
+	init: function(){
+		accessCountimer=setInterval(function(){Typer.updLstChr();},500); 
+		$.get(Typer.file,function(data){
+			Typer.text=data
+			Typer.text = Typer.text.slice(0, Typer.text.length-1);
+		});
+	},
+ 
+	content:function(){
+		return $("#console").html();
+	},
+ 
+	write:function(str){
+		$("#console").append(str);
+		return false;
+	},
+ 
+	makeAccess:function(){
+		Typer.hidepop(); 
+		Typer.accessCount=0; 
+		var ddiv=$("<div id='gran'>").html(""); 
+		ddiv.addClass("accessGranted"); 
+		ddiv.html("<h1>ACCESS GRANTED</h1>"); 
+		$(document.body).prepend(ddiv); 
+		return false;
+	},
+	makeDenied:function(){
+		Typer.hidepop(); 
+		Typer.deniedCount=0; 
+		var ddiv=$("<div id='deni'>").html("");
+		ddiv.addClass("accessDenied");
+		ddiv.html("<h1>ACCESS DENIED</h1>");
+		$(document.body).prepend(ddiv);
+		return false;
+	},
+ 
+	hidepop:function(){
+		$("#deni").remove();
+		$("#gran").remove();
+	},
+ 
+	addText:function(key){
+		if(key.keyCode==18){
+			Typer.accessCount++;
+			if(Typer.accessCount>=3){
+				Typer.makeAccess();
+			}
+		}else if(key.keyCode==20){
+			Typer.deniedCount++;
+			if(Typer.deniedCount>=3){
+				Typer.makeDenied();
+			}
+		}else if(key.keyCode==27){ 
+			Typer.hidepop(); 
+		}else if(Typer.text){ 
+			var cont=Typer.content(); 
+			if(cont.substring(cont.length-1,cont.length)=="|") 
+				$("#console").html($("#console").html().substring(0,cont.length-1)); 
+			if(key.keyCode!=8){ 
+				Typer.index+=Typer.speed;	
+			}else{
+				if(Typer.index>0) 
+					Typer.index-=Typer.speed;
+			}
+			var text=Typer.text.substring(0,Typer.index)
+			var rtn= new RegExp("\n", "g"); 
 	
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
-		
-		
+			$("#console").html(text.replace(rtn,"<br/>"));
+			window.scrollBy(0,50); 
+		}
+		if ( key.preventDefault && key.keyCode != 122 ) { 
+			key.preventDefault()
+		};  
+		if(key.keyCode != 122){
+			key.returnValue = false;
+		}
+	},
+ 
+	updLstChr:function(){ 
+		var cont=this.content();  
+		if(cont.substring(cont.length-1,cont.length)=="|") 
+			$("#console").html($("#console").html().substring(0,cont.length-1)); 
+		else
+			this.write("|"); 
+	}
+}
+ 
+function replaceUrls(text) {
+	var http = text.indexOf("http://");
+	var space = text.indexOf(".me ", http);
+	if (space != -1) { 
+		var url = text.slice(http, space-1);
+		return text.replace(url, "<a href=\""  + url + "\">" + url + "</a>");
+	} else {
+	return text
+}
+}
+Typer.speed=3;
+Typer.file="nirnaypatel.txt";
+Typer.init();
+ 
+var timer = setInterval("t();", 30);
+function t() {
+	Typer.addText({"keyCode": 123748});
+	if (Typer.index > Typer.text.length) {
+		clearInterval(timer);
+	}
+}
+ 
+</script> 
+<div id="console"></div> 
+<script type="text/javascript">
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Nirnay Patel</h1>
-						<p>Developer | Entrepreneur | Growth Hacker </p>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/patelnirnay" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://twitter.com/itsnirnay" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/nironline" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/nirnaypatel/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.snapchat.com/add/nirnaypatel" class="icon fa-snapchat"><span class="label">Snapchat</span></a></li>
-								<li><a href="mailto:nirnay@nirnaypatel.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-							<!--	<li><a href="/books.html" class="fa fa-book"><span class="label">Books</span></a></li>
-								<li><a href="/interests.html" class="icon fa-envelope-o"><span class="label">Interests</span></a></li> 
-								<li><a href="/blog.html" class="fa fa-tumblr" aria-hidden="true"><span class="label">Blog</span></a></li> 
-								<li><a href="/resume.html" class="fa fa-file-text"><span class="label">Resume</span></a></li>-->
-								
-							</ul>
-						</nav>
-					</header>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-610661-7']);
+  _gaq.push(['_trackPageview']);
 
-				<!-- Footer -->
-					<footer id="footer">
-					
-						<!-- <span class="copyright">&copy; Nirnay Patel</a></span>-->
-					</footer>
-
-			</div>
-		</div>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		
-		<script>
-			window.onload = function() { document.body.className = ''; }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
-	</body>
-</html>
+</body> 
+</html> 
