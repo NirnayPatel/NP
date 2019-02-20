@@ -2,9 +2,6 @@
 <span id="c">$</span> cat nirnaypatel.txt<br/><br/>
 Hey! I'm Nirnay Patel.<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 
-
-I hack<!-- laglaglaglag --> growth...
-
 <!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj --><p>Currently at <a href="https://www.perfecttense.com">Perfect Tense</a> and <a href="https://www.cortx.com">Cortx</a>, making the world smarter using Artificial Intelligence.
 <!- oqwipjefqwioefjwioqfjoiqwjfeioqwjefoi -->
 
