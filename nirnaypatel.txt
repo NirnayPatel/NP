@@ -1,5 +1,16 @@
+<pre>
+  _   _   _                                  _____            _            _                                
+ | \ | | (_)                                |  __ \          | |          | |                               
+ |  \| |  _   _ __   _ __     __ _   _   _  | |__) |   __ _  | |_    ___  | |       ___    ___    _ __ ___  
+ | . ` | | | | '__| | '_ \   / _` | | | | | |  ___/   / _` | | __|  / _ \ | |      / __|  / _ \  | '_ ` _ \ 
+ | |\  | | | | |    | | | | | (_| | | |_| | | |      | (_| | | |_  |  __/ | |  _  | (__  | (_) | | | | | | |
+ |_| \_| |_| |_|    |_| |_|  \__,_|  \__, | |_|       \__,_|  \__|  \___| |_| (_)  \___|  \___/  |_| |_| |_|
+                                      __/ |                                                                 
+                                     |___/                                                                  
+</pre>
+
 <span id="a">nirnaypatel.com</span>:<span id="b">~</span>
-<span id="c">$</span> cat nirnaypatel.txt<br/><br/>
+<!-- <span id="c">$</span> cat nirnaypatel.txt<br/><br/> -->
 Hey! I'm Nirnay Patel.<!-- laglaglaglaglaglaglaglaglaglaglaglag -->
 
 <!-- qowifjqwoeijfoqweijfqweoifjqweofijqweoqwoijefoqwijefoijfqiwoefjj --><p>Currently at <a href="https://www.perfecttense.com">Perfect Tense</a> and <a href="https://www.cortx.com">Cortx</a>, making the world smarter using Artificial Intelligence.
